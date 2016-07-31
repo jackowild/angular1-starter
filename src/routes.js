@@ -8,8 +8,12 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
-    .state('app', {
+    .state('home', {
       url: '/',
-      template: '<app></app>'
+      template: '<home></home>'
+    })
+    .state('page1', {
+      url: '/page1',
+      template: '<page1></page1>'
     });
 }
